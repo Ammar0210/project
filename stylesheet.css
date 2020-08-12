@@ -1,0 +1,270 @@
+:root {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color:white;
+    margin:0;
+    padding:0;
+}
+
+header {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:#55d6aa;
+}
+
+header::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+h1{
+    font-size:3em;
+    font-family:'Felix Titling';
+    font-weight:bold;
+    letter-spacing:2px;
+    text-align:center;
+}
+
+h2{
+    font-size: 2em;
+    font-family: 'Tempus Sans ITC';
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    font-size:32px;
+    font-family:'Book Antiqua';
+    text-align:center;
+}
+
+aside h3 {
+    font-size: 3em;
+    font-family: 'Felix Titling';
+    font-weight: bold;
+    letter-spacing: 18px;
+    text-align: center;
+}
+
+footer {
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.logo{
+    color:white;
+    font-size:35px;
+    line-height:110px;
+    font-weight:bold;
+}
+
+nav ul{
+    margin-right:20px;
+    float:right;
+}
+
+nav li {
+    display:inline-block;
+    line-height:80px;
+    margin:0 5px;
+}
+
+nav a {
+    color:antiquewhite;
+    text-decoration:none;
+    text-transform:uppercase;
+    border-radius:3px;
+    font-size:20px;
+}
+
+
+nav a:hover{
+    color:#000;
+}
+
+a.active,a:hover{
+    transition:.30s;
+}
+
+.logo{
+    color:white;
+    font-size:35px;
+    line-height:90px;
+    padding: 0 100px;
+    font-weight:bold;
+}
+
+img {
+    border:solid black;
+    max-width:100%;
+}
+
+#dog1{
+    float:left;
+}
+
+#dog2 {
+    float: left;
+}
+
+.checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+    display:none;
+}
+#check{
+    display:none;
+}
+#ah1 {
+    display:none;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px){
+
+   main{
+       font-size:16px;
+   }
+   img{
+       max-height:100%;
+       height:200px;
+       max-width:100%;
+
+   }
+   label.logo {
+       font-size: 26px;
+       padding-left:20px;
+   }
+
+   .checkbtn{
+       display:block;
+       padding:20px;
+       margin:15px;
+   }
+
+       ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:#2c3e50;
+        top:80px;
+        left:-100%;
+        text-align:center;
+        transition:all .5s;
+    }
+
+    nav ul li{
+        display:block;
+        margin:50px;
+        line-height:30px;
+    }
+
+    nav ul li a{
+        font-size:20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    #banner{
+        display:none;
+    }
+    #ah1 {
+    display:block;
+    background-color:#5a86ff;
+    border:solid black;
+}
+    footer{
+        font-size:12px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+
+    label.logo {
+        font-size: 40px;
+        padding-left: 20px;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+
+    .checkbtn{
+        padding:20px;
+        display:block;
+        float:right;
+        margin:15px;
+    }
+
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:#2c3e50;
+        top:80px;
+        left:-100%;
+        text-align:center;
+        transition:all .5s;
+    }
+
+    nav ul li{
+        display:block;
+        margin:50px;
+        line-height:30px;
+        padding-bottom:20px;
+    }
+
+    nav ul li a{
+        font-size:20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    img {
+        height: 400px;
+        width: 1024px;
+        max-width:100%;
+    }
+
+    main {
+        font-size: 20px;
+    }
+    #banner {
+        display: none;
+    }
+    #ah1 {
+        display: block;
+        background-color: #5a86ff;
+        border: solid black;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
