@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wylie Pets Alive!</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let myTime = setInterval(imageRandom, 3000);
+        function imageRandom() {
+            let randomNumber = Math.floor(Math.random() * 2) + 1;
+            document.getElementById("swap1").src = randomNumber + ".jpg";
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+ <body>
+     <header>
+         <nav>
+             <label class="logo">Wylie Pets Alive</label>
+             <input type="checkbox" id="check" />
+             <label for="check" class="checkbtn">
+                 <i class="fas fa-bars"></i>
+             </label>
+             <ul>
+                 <li><a class="active" href="home.html">Home</a></li>
+                 <li><a href="adoptablepets.html">Adoptable Pets </a></li>
+                 <li><a href="volunteer.html">Volunteer</a></li>
+                 <li><a href="guidelines.html">Guidelines</a></li>
+                 <li><a href="about.html">About Us</a></li>
+                 <li><a href="https://www.peta.org/">Peta</a></li>
+                 <li><a href="https://www.petfinder.com/">Pet Finder</a></li>
+                 <li><a href="https://www.google.com/">Google</a></li>
+             </ul>
+         </nav>
+     </header>
+     <main>
+
+         <img id="swap1" src="1.jpg" alt="dog" width="1890" height="485" />
+
+         <h2>Reasons to Adopt</h2>
+         <p>Adopting a rescue pet is such an emotionally rewarding experience. You save a life and in the process you gain a family member. It's a win-win for all involved!</p>
+
+         <p>Studies have shown that simply petting a dog can decrease your heart rate and blood pressure, which lowers overall stress.
+            Not to mention, kids who grow up in a household with a pet are less at risk of developing asthma and allergies.</p>
+
+         <p>A pet will love you unconditionally. if you have pets, you know what a mood boost it is to see your dog greet you at the door after a long day at work. 
+              Or how good it feels to have your cat jump up on your lap for some snuggle time. </p>
+
+         <p>Most pets from shelters and rescues are already spayed or neutered, vaccinated, and even trained!
+          These expenses are covered by a relatively low adoption fee, significantly less than the price you would pay at the vet clinic or if you buy a pet from a breeder.</p>
+     </main>
+     <footer>Webmaster : Ammar Ahmed <br />Date : 8/9/2020</footer>
+ </body>
+</html>

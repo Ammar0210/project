@@ -1,0 +1,77 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>| Volunteer Form |</title>
+    <link rel="stylesheet" type="text/css" href="vstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+         <nav>
+             <label class="logo">Wylie Pets Alive</label>
+             <input type="checkbox" id="check" />
+             <label for="check" class="checkbtn">
+                 <i class="fas fa-bars"></i>
+             </label>
+             <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="adoptablepets.html">Adoptable Pets </a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="guidelines.html">Guidelines</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="https://www.peta.org/">Peta</a></li>
+            <li><a href="https://www.petfinder.com/">Pet Finder</a></li>
+            <li><a href="https://www.google.com/">Google</a></li>
+        </ul>
+    </nav>
+    </header>
+    <img src="4.jpg" alt="Volunteer" width="1900" height="350" />
+    <main>
+    <h2 id="vh2">Volunteers are the Heart and Soul of Wylie Pets Alive!</h2>
+    <p>From our foster families to event leads (and everything in between), our volunteers are essential to our mission.
+        By dedicating their valuable time to rescue and save homeless animals in our community.</p>
+    <ul>
+        <li>You will make a lasting difference in many animals lives.</li>
+        <li>Volunteering is good for your emotional, physical, and mental health.</li>
+        <li>You will grow personally and professionally, and learn new skills.</li>
+        <li>You will make connections with amazing, like-minded people.</li>
+    </ul>
+        </main>
+
+    <h2 id="va">Volunteer Application</h2>
+ <form method="post" action="feedback.php" id="volunteer">
+
+     <div class="data">
+     <div class="labels">
+     <label for="name">Name</label>
+     <label for="adress">Address</label>
+     <label for="email">Email</label>
+     <label for="age">Age</label>
+     <label for="phone">Phone</label>
+     <label for="city">City</label>
+     </div>
+     
+     <div class="input_fields">
+     <input type="text" id="name" name="name" />
+     <input type="text" id="address" name="address" required />
+     <input type="text" id="email" name="email" />
+     <input type="number" id="age" name="age" />
+     <input type="number" id="phone" name="phone" required />
+     <input type="text" id="city" name="city" />
+     </div>
+     </div>
+
+     <div class="checkbox">
+     <h3>Why are you interested in volunteering?</h3>
+     <textarea name="comments" rows="4" cols="20" wrap="hard"></textarea>
+     </div>
+     <br /><br />
+     <button type="reset">Reset</button>
+     <input type="submit" value="Submit" />
+
+
+ </form>
+ <footer>Webmaster : Ammar Ahmed <br />Date : 8/9/2020</footer>
+</body>
+</html>

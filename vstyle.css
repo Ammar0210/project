@@ -1,0 +1,281 @@
+:root {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:#55d6aa;
+}
+
+header::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Felix Titling';
+    font-weight: bold;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Tempus Sans ITC';
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    font-size: 32px;
+    font-family: 'Book Antiqua';
+    text-align: center;
+}
+
+#va{
+    font-family:Arial;
+}
+
+footer {
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.logo{
+    color:white;
+    font-size:35px;
+    line-height:110px;
+    font-weight:bold;
+}
+
+nav ul{
+    margin-right:20px;
+    float:right;
+}
+
+nav li {
+    display:inline-block;
+    line-height:80px;
+    margin:0 5px;
+}
+
+nav a {
+    color:antiquewhite;
+    text-decoration:none;
+    text-transform:uppercase;
+    border-radius:3px;
+    font-size:20px;
+}
+
+
+nav a:hover{
+    color:#000;
+}
+
+a.active,a:hover{
+    background:#1b9bff;
+    transition:.30s;
+}
+
+.logo{
+    color:white;
+    font-size:35px;
+    line-height:90px;
+    padding: 0 100px;
+    font-weight:bold;
+}
+
+.checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+    display:none;
+}
+
+#check{
+    display:none;
+}
+
+img {
+    border: solid black;
+}
+
+.data{
+    display:flex;
+    justify-content:center;
+}
+
+.labels{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-right:30px;
+    font-size:20px;
+}
+
+.input_fields{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+input,label{
+    margin-bottom:8px;
+}
+
+.data-list{
+    display:flex;
+    justify-content:center;
+    margin-right:32px;
+    margin-bottom:12px;
+    font-size:20px;
+}
+
+.gender{
+    margin-left:28px;
+}
+
+.checkbox{
+    margin-left:20px;
+    display:flex;
+    flex-direction:column;
+    margin-bottom:16px;
+    justify-content:center;
+    text-align:center;
+}
+
+
+textarea{
+    font-size:22px;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px){
+
+   main{
+       font-size:16px;
+   }
+   img{
+       height:200px;
+       width:505px;
+       margin:0%;
+   }
+   label.logo {
+       font-size: 40px;
+       padding-left:20px;
+   }
+
+   .checkbtn{
+       display:block;
+       padding:20px;
+       margin:15px;
+   }
+
+       ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:#2c3e50;
+        top:80px;
+        left:-100%;
+        text-align:center;
+        transition:all .5s;
+    }
+
+    nav ul li{
+        display:block;
+        margin:50px;
+        line-height:30px;
+    }
+
+    nav ul li a{
+        font-size:20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    
+    label.logo{
+        font-size:40px;
+        padding-left:20px;
+    }
+    nav ul li a{
+        font-size:16px;
+    }
+
+    .checkbtn{
+        padding:20px;
+        display:block;
+        float:right;
+        margin:15px;
+    }
+
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:#2c3e50;
+        top:80px;
+        left:-100%;
+        text-align:center;
+        transition:all .5s;
+    }
+
+    nav ul li{
+        display:block;
+        margin:50px;
+        line-height:30px;
+        padding-bottom:20px;
+    }
+
+    nav ul li a{
+        font-size:20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    img {
+        height: 400px;
+        width: 990px;
+        margin: 0%;
+    }
+
+    main {
+        font-size: 20px;
+    }
+}
