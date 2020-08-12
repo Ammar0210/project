@@ -183,7 +183,7 @@ textarea{
        margin:0%;
    }
    label.logo {
-       font-size: 26px;
+       font-size: 20px;
        padding-left:20px;
    }
 
@@ -191,6 +191,8 @@ textarea{
        display:block;
        padding:20px;
        margin:15px;
+       font-size:20px;
+       padding-bottom:30px;
    }
 
        ul{
