@@ -148,7 +148,7 @@ img {
 
    }
    label.logo {
-       font-size: 26px;
+       font-size: 20px;
        padding-left:20px;
    }
 
@@ -156,6 +156,8 @@ img {
        display:block;
        padding:20px;
        margin:15px;
+       padding-bottom:30px;
+       font-size:20px;
    }
 
        ul{
